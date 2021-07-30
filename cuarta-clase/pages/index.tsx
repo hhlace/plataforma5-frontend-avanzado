@@ -15,7 +15,7 @@ type CardProps = {
   firstSeenIn: string;
 };
 
-function Card({ id, imageLink, name, specie, status, lastLocation, firstSeenIn }: CardProps) {
+export function Card({ id, imageLink, name, specie, status, lastLocation, firstSeenIn }: CardProps) {
   {/* TODO: Solve minWidth to flexBasis */ }
 
   return (
@@ -69,6 +69,7 @@ function Card({ id, imageLink, name, specie, status, lastLocation, firstSeenIn }
     </Link>
   );
 }
+
 
 // Generar un array de seis números aleatorios entre 1 y 671
 function createRandomCharacterIds(length: number) {
